@@ -1,0 +1,12 @@
+service: orderfood-lambda
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+functions:
+  orderFood:
+    handler: handler.orderFood
